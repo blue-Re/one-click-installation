@@ -1,0 +1,19 @@
+# =====================================================================
+# packages.winget —— 你的软件清单（winget 逐个安装）
+# 一行一个 winget 包 ID，# 开头为注释。增删软件改这里即可。
+# 查包 ID：winget search <名字>
+# 从当前机器导出已装清单：winget export -o packages.json
+# 注意：数据库（MySQL / PostgreSQL / MongoDB）不在此清单里，
+#       它们需要设密码等特殊处理，统一放在 scripts/70-databases.ps1。
+# =====================================================================
+
+Git.Git                       # git
+Microsoft.PowerShell          # PowerShell 7（比自带 5.1 体验好）
+Microsoft.WindowsTerminal     # Windows Terminal 终端
+JanDeDobbeleer.OhMyPosh       # Oh My Posh 提示符主题引擎（对应 oh-my-zsh）
+CoreyButler.NVMforWindows     # nvm-windows（Node 版本管理）
+Python.Python.3.12            # Python 3
+Microsoft.VisualStudioCode    # VS Code
+Google.Chrome                 # Chrome 浏览器
+Docker.DockerDesktop          # Docker Desktop
+MongoDB.Shell                 # mongosh（连接 MongoDB 用；服务端在 70 脚本装）

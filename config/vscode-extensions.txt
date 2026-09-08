@@ -1,0 +1,37 @@
+# VS Code 插件清单（每行一个扩展 ID，# 开头为注释）
+# 修改后重跑 scripts/60-vscode-extensions.sh 即可增量安装。
+# 查某个插件的 ID：在插件页 URL 的 itemName= 后面，或 `code --list-extensions`
+
+formulahendry.auto-close-tag                 # Auto Close Tag 自动闭合标签
+formulahendry.auto-rename-tag                # Auto Rename Tag 自动重命名标签
+BracketPairColorDLW.bracket-pair-color-dlw   # Bracket Pair Color DLW 括号高亮
+MS-CEINTL.vscode-language-pack-zh-hans       # 简体中文语言包
+formulahendry.code-runner                    # Code Runner 代码运行
+streetsidesoftware.code-spell-checker        # Code Spell Checker 拼写校验
+naumovs.color-highlight                       # Color Highlight 颜色高亮
+usernamehw.errorlens                          # Error Lens 报错提示
+dsznajder.es7-react-js-snippets              # ES7+ React/Redux/RN snippets
+dbaeumer.vscode-eslint                       # ESLint
+donjayamanne.githistory                      # Git History
+eamodio.gitlens                              # GitLens
+kisstkondoros.vscode-gutter-preview          # Image preview
+xabikos.JavaScriptSnippets                   # JavaScript (ES6) code snippets
+ritwickdey.LiveServer                        # Live Server
+PKief.material-icon-theme                    # Material Icon Theme
+esbenp.prettier-vscode                       # Prettier
+ChakrounAnas.turbo-console-log               # Turbo Console Log
+styled-components.vscode-styled-components   # vscode-styled-components
+Wscats.vue                                    # Vue 3 Support - All In One
+
+# ---- 追加 ----
+pranaygp.vscode-css-peek                     # CSS Peek 跳转到 CSS 定义
+wix.vscode-import-cost                        # Import Cost 显示导入包体积
+lllllllqw.jsdoc                              # jsdoc 生成注释（想更强可换 crystal-spider.jsdoc-generator）
+DavidAnson.vscode-markdownlint               # markdownlint Markdown 规范检查
+zaaack.markdown-editor                       # Md Editor 所见即所得（另有 advancer-limited.vscode-md-editor）
+christian-kohler.npm-intellisense            # npm Intellisense 自动补全 npm 模块
+christian-kohler.path-intellisense           # Path Intellisense 路径补全
+Prisma.prisma                                # Prisma ORM 支持
+ms-python.python                             # Python
+ms-vscode-remote.remote-ssh                  # Remote - SSH 远程开发
+SimonSiefke.svg-preview                      # Svg Preview SVG 预览
