@@ -23,6 +23,9 @@ brew "mongodb-community"
 cask "google-chrome"
 cask "visual-studio-code"
 cask "docker"                    # Docker Desktop
+cask "tailscale-app"             # Tailscale 桌面端（菜单栏 App）；
+                                 # 装完需手动打开登录。这是官网的 Standalone 变体，
+                                 # 不要再用 App Store 版（沙箱版会与它冲突）。
 
 # ---- Mac App Store 应用 ----
 # Xcode 体积很大且需登录 Apple ID，默认注释。需要就取消注释并先 `mas signin`。

@@ -23,6 +23,11 @@ Chrome 扩展无法命令行批量安装（Chrome 网上应用店限制），请
 
 Docker Desktop：首次需手动打开 /Applications/Docker.app 完成初始化并授予权限。
 
+Tailscale（菜单栏图标已在，但登录无法脚本化）：
+  1) 点菜单栏 Tailscale 图标 -> Log in，用 Google / GitHub / Microsoft 账号登录；
+  2) 想让 Mac 当 SSH 服务端（tailscale up --ssh），Standalone 版即可，无需换别的版本；
+  3) 别同时装 App Store 版，两者共存会让网络扩展起不来（要换需先删掉并从废纸篓清空后重启）。
+
 全部完成后，执行下面这行让配置生效（或直接重开终端）：
   source ~/.zshrc
 EOF

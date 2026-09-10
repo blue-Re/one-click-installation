@@ -34,7 +34,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1
 |------|------|
 | `00-preflight` | 检查系统/PowerShell，提示管理员权限 |
 | `10-winget` | 确认 winget 可用 |
-| `20-packages` | 按 [`packages.winget`](packages.winget) 装：Git、PowerShell7、Windows Terminal、Oh My Posh、nvm、Python、VS Code、Chrome、Docker Desktop、mongosh |
+| `20-packages` | 按 [`packages.winget`](packages.winget) 装：Git、PowerShell7、Windows Terminal、Oh My Posh、nvm、Python、VS Code、Chrome、Docker Desktop、mongosh、Tailscale |
 | `30-powershell` | 配置 Oh My Posh + PSReadLine（历史自动建议/语法高亮）+ posh-git + 图标，写入 profile |
 | `40-node` | nvm-windows 装 Node LTS（配国内镜像） |
 | `50-node-packages` | corepack 启用 pnpm/yarn，npm 切国内源 |
@@ -59,6 +59,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1
   - **MongoDB**：装成 Windows 服务，建 `root` 用户（密码 `12345678`）；默认不强制鉴权，需要的话按脚本提示改 `mongod.cfg`。
   - **MySQL**：winget 装的是 *MySQL Installer*（不是服务端本体），多数情况下需要再用它的向导装 Server 并把 root 密码设为 `12345678`——脚本会检测并给出提示。
 - **Chrome 扩展**：无法命令行装，最后会打印 6 个安装链接。
+- **Tailscale**：装完从开始菜单打开登录即可（登录无法脚本化）；`winget` 装的是官网版本，别再用 Microsoft Store 里的同名 App。
 - **字体**：想让提示符图标好看，装 Nerd Font：`oh-my-posh font install CascadiaCode`，再在 Windows Terminal 设置里选该字体。
 - **网络**：nvm、npm 已配国内镜像；winget 本体走微软/厂商源，一般可直连。
 

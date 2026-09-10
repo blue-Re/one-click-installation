@@ -20,6 +20,9 @@ MySQL：若第 70 步提示需手动，请用『开始菜单 -> MySQL Installer�
 
 Docker Desktop：首次需手动打开完成初始化；Windows 需开启 WSL2（Docker 会引导）。
 
+Tailscale（登录无法脚本化）：从开始菜单打开 Tailscale，用 Google / GitHub / Microsoft
+       账号登录；登录后托盘图标变蓝并显示本机 100.x.x.x 地址。
+
 字体：想让 Oh My Posh 图标正常显示，装一个 Nerd Font 并在 Windows Terminal 里选它：
        oh-my-posh font install CascadiaCode
 

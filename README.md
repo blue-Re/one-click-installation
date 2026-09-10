@@ -31,13 +31,13 @@ chmod +x install.sh scripts/*.sh
 |------|------|
 | `00-preflight` | 检查 macOS、安装 Xcode 命令行工具 |
 | `10-homebrew` | 用 gitee 镜像装 Homebrew，并切换到国内下载源加速 |
-| `20-brew-bundle` | 按 [`Brewfile`](Brewfile) 装：git/python/mysql/postgresql/mongodb、Chrome、VS Code、Docker Desktop |
+| `20-brew-bundle` | 按 [`Brewfile`](Brewfile) 装：git/python/mysql/postgresql/mongodb、Chrome、VS Code、Docker Desktop、Tailscale |
 | `30-oh-my-zsh` | oh-my-zsh + autosuggestions + syntax-highlighting，配好 `plugins` 数组 |
 | `40-nvm-node` | nvm + Node LTS，写好环境变量 |
 | `50-node-packages` | corepack 启用 pnpm / yarn，npm 切国内源 |
 | `60-vscode-extensions` | 按 [`config/vscode-extensions.txt`](config/vscode-extensions.txt) 装 VS Code 插件 |
 | `70-databases` | 启动三个数据库，root 密码统一设为 `12345678` |
-| `90-manual-notes` | 打印需手动完成的部分（Chrome 扩展、完整版 Xcode） |
+| `90-manual-notes` | 打印需手动完成的部分（Chrome 扩展、完整版 Xcode、Tailscale 登录） |
 
 ## 常用操作
 
@@ -71,5 +71,6 @@ bash scripts/60-vscode-extensions.sh
 - **脚本可重复运行**：已装的会跳过，改完清单重跑只补新增的。
 - **数据库**：MySQL / PostgreSQL(root 超级用户) / MongoDB 的 root 密码都设为 `12345678`。MongoDB 默认不强制鉴权，如需强制登录见脚本末尾提示。数据库初始化受环境影响较大，若失败脚本会打印手动命令而不中断。
 - **Chrome 扩展**：无法命令行批量装，跑到最后会打印 6 个扩展的安装链接，手动点一下。
+- **Tailscale**：装的是官网 Standalone 版（`cask "tailscale-app"`），登录要手动点菜单栏图标。别同时装 App Store 版，两者冲突会让网络扩展起不来。
 - **完整版 Xcode**：体积大且要登录 Apple ID，默认不装（`Brewfile` 里已注释）。日常前端用命令行工具就够。
 - **国内网络**：已尽量用 gitee / 中科大 / npmmirror 镜像。nvm、oh-my-zsh 个别源若仍慢，脚本里有 fallback 或可自行替换镜像地址。

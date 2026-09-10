@@ -16,4 +16,5 @@ Python.Python.3.12            # Python 3
 Microsoft.VisualStudioCode    # VS Code
 Google.Chrome                 # Chrome 浏览器
 Docker.DockerDesktop          # Docker Desktop
+tailscale.tailscale           # Tailscale 桌面端（装完需手动打开登录）
 MongoDB.Shell                 # mongosh（连接 MongoDB 用；服务端在 70 脚本装）
